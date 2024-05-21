@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Intro to Bootstrap</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+<body>
+    <div class="container-fluid p-5 bg-secondary text-body text-center">
+        <h1>My First Bootstrap Page</h1>
+        <p>Resize this responsive page to see the effect!</p>
+        <p>Welcome to my site</p>
+    </div>
+    <!-- Carousel -->
+    <div id="demo" class="carousel slide" data-bs-ride="carousel">
+
+        <!-- Indicators/dots -->
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+            <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+            <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+        </div>
+
+        <!-- The slideshow/carousel -->
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="images/BTS you never walk alone.jpg" alt="BTS" class="d-block" style="width:100%" height="400px">
+            </div>
+            <div class="carousel-item">
+                <img src="images/bts festa.jpg" alt="BTS" class="d-block" style="width:100%" height="400px">
+            </div>
+            <div class="carousel-item">
+                <img src="images/10.jpg" alt="BTS" class="d-block" style="width:100%" height="400px">
+            </div>
+        </div>
+
+        <!-- Left and right controls/icons -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+        </button>
+    </div>
+    <div class="container mt-5 text-success">
+        <div class="row">
+            <div class="col-sm-4">
+                <h3>Facebook</h3>
+                <p>Facebook is a social networking platform launched in 2004 that allows users to create profiles, share updates, photos, and videos, connect with friends and family, join groups, and follow pages of interest. It is widely used for personal interaction, community building, and business marketing.
+
+                </p>
+
+            </div>
+            <div class="col-sm-4">
+                <h3>Instagram</h3>
+                <p>
+                    Instagram is a photo and video sharing app introduced in 2010, known for its visual content and storytelling features. Users can post images and short videos, use filters, share Stories (which disappear after 24 hours), and explore content through hashtags. It is popular for its emphasis on aesthetics and influencer culture.</p>
+
+            </div>
+            <div class="col-sm-4">
+                <h3>Twitter</h3>
+                <p>Twitter, launched in 2006, is a microblogging platform where users post short messages called "tweets" (up to 280 characters). It is used for real-time updates, news dissemination, and public conversations. Hashtags and trending topics help users follow and participate in broader discussions.
+                </p>
+
+            </div>
+        </div>
+        <div class="container mt-5">
+            <div class="row">
+                <div class="col-sm-4">
+                    <div class="container mt-3">
+                        <h2>Card Image</h2>
+
+                        <div class="card" style="width:400px">
+                            <img class="card-img-top" src="images/1.png" alt="Card image" style="width:100%">
+                            <div class="card-body">
+                                <h4 class="card-title">Jane Doe</h4>
+                                <p class="card-text">Some example text some example text. John Doe is an architect and
+                                    engineer</p>
+                                <div class="container mt-3">
+
+
+                                    <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                                        data-bs-target="#myModal">
+                                        See Profile
+                                    </button>
+                                </div>
+                                <!-- The Modal -->
+                                <div class="modal" id="myModal">
+                                    <div class="modal-dialog">
+                                        <div class="modal-content">
+
+                                            <!-- Modal Header -->
+                                            <div class="modal-header">
+                                                <h4 class="modal-title">Modal Heading</h4>
+                                                <button type="button" class="btn-close"
+                                                    data-bs-dismiss="modal"></button>
+                                            </div>
+
+                                            <!-- Modal body -->
+                                            <div class="modal-body">
+                                                Modal body..
+                                            </div>
+
+                                            <!-- Modal footer -->
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-danger"
+                                                    data-bs-dismiss="modal">Close</button>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <br>
+                        <img src="images/2.png" class="sardines" alt="Cinque Terre" height="400px" width="400px">
+
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="container mt-3">
+                        <h2>Card Image</h2>
+                        <div class="card" style="width:400px">
+                            <img class="card-img-top" src="images/1.png" alt="Card image" style="width:100%">
+                            <div class="card-body">
+                                <h4 class="card-title">Jane Doe</h4>
+                                <p class="card-text">Some example text some example text. John Doe is an architect and
+                                    engineer</p>
+                                <div class="container mt-3">
+
+
+                                    <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                                        data-bs-target="#myModal">
+                                        See Profile
+                                    </button>
+                                </div>
+                                <!-- The Modal -->
+                                <div class="modal" id="myModal">
+                                    <div class="modal-dialog">
+                                        <div class="modal-content">
+
+                                            <!-- Modal Header -->
+                                            <div class="modal-header">
+                                                <h4 class="modal-title">Modal Heading</h4>
+                                                <button type="button" class="btn-close"
+                                                    data-bs-dismiss="modal"></button>
+                                            </div>
+
+                                            <!-- Modal body -->
+                                            <div class="modal-body">
+                                                Modal body..
+                                            </div>
+
+                                            <!-- Modal footer -->
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-danger"
+                                                    data-bs-dismiss="modal">Close</button>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <br>
+                        <img src="images/2.png" class="Sardines" alt="Cinque Terre" height="400px" width="400px">
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="container mt-3">
+                        <h2>Card Image</h2>
+                        <div class="card" style="width:400px">
+                            <img class="card-img-top" src="images/1.png" alt="Card image" style="width:100%">
+                            <div class="card-body">
+                                <h4 class="card-title">Jane Doe</h4>
+                                <p class="card-text">Some example text some example text. John Doe is an architect and
+                                    engineer</p>
+                                <div class="container mt-3">
+
+
+                                    <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                                        data-bs-target="#myModal">
+                                        See Profile
+                                    </button>
+                                </div>
+                                <!-- The Modal -->
+                                <div class="modal" id="myModal">
+                                    <div class="modal-dialog">
+                                        <div class="modal-content">
+
+                                            <!-- Modal Header -->
+                                            <div class="modal-header">
+                                                <h4 class="modal-title">Modal Heading</h4>
+                                                <button type="button" class="btn-close"
+                                                    data-bs-dismiss="modal"></button>
+                                            </div>
+
+                                            <!-- Modal body -->
+                                            <div class="modal-body">
+                                                Modal body..
+                                            </div>
+
+                                            <!-- Modal footer -->
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-danger"
+                                                    data-bs-dismiss="modal">Close</button>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <br>
+                        <img src="images/2.png" class="Kawasan Falls" alt="Cinque Terre" height="400px" width="400px">
+                    </div>
+                </div>
+            </div>
+            <footer class="bg-body-tertiary text-center">
+                <!-- Grid container -->
+                <div class="container p-4 pb-0">
+                    <!-- Section: Social media -->
+                    <section class="mb-4">
+                        <!-- Facebook -->
+                        <a data-mdb-ripple-init class="btn text-white btn-floating m-1"
+                            style="background-color: #3b5998;" href="https://www.facebook.com/" role="button"><i
+                                class="fab fa-facebook-f"></i></a>
+
+                        <!-- Twitter -->
+                        <a data-mdb-ripple-init class="btn text-white btn-floating m-1"
+                            style="background-color: #55acee;" href="https://twitter.com/home?lang-en" role="button"><i
+                                class="fab fa-twitter"></i></a>
+
+                        <!-- Google -->
+                        <a data-mdb-ripple-init class="btn text-white btn-floating m-1"
+                            style="background-color: #dd4b39;" href="https://www.google.com/index.html" role="button"><i
+                                class="fab fa-google"></i></a>
+
+                        <!-- Instagram -->
+                        <a data-mdb-ripple-init class="btn text-white btn-floating m-1"
+                            style="background-color: #ac2bac;" href="https://www.instagram.com/" role="button"><i
+                                class="fab fa-instagram"></i></a>
+
+                        <!-- Linkedin -->
+                        <a data-mdb-ripple-init class="btn text-white btn-floating m-1"
+                            style="background-color: #0082ca;" href="https://www.linkedin.com/" role="button"><i
+                                class="fab fa-linkedin-in"></i></a>
+                        <!-- Github -->
+                        <a data-mdb-ripple-init class="btn text-white btn-floating m-1"
+                            style="background-color: #333333;" href="https://github.com/" role="button"><i
+                                class="fab fa-github"></i></a>
+                    </section>
+                    <!-- Section: Social media -->
+                </div>
+                <!-- Grid container -->
+
+                <!-- Copyright -->
+                <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.05);">
+                    © 2024 Copyright:
+                    <a class="text-body" href="https://mdbootstrap.com/">wwww.giannediaz.com</a>
+                </div>
+                <!-- Copyright -->
+            </footer>
+
+
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
